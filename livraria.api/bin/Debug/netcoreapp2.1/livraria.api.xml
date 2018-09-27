@@ -262,7 +262,7 @@
               <response code="204">Nenhuma pedido encontrado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
-        <member name="M:livraria.api.Controllers.PedidosController.GetPagamento(System.Int32)">
+        <member name="M:livraria.api.Controllers.PedidosController.GetPagamento(System.Int32,livraria.api.mode.Model.Request.PagamentoRequest)">
              <summary>
              Realizar pagamento.
              </summary>

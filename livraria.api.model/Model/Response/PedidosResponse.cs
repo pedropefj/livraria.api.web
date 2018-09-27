@@ -61,4 +61,64 @@ namespace livraria.api.mode.Model.Response
             };
         }
     }
+
+    public class TodosPedidosResponse400 : IExamplesProvider
+    {
+        public object GetExamples()
+        {
+            List<string> listaCodigos = new List<string> { "M199", "M0001" };
+            var retorno = ExemplosUtil.ListarMensagens(listaCodigos, HttpStatusCode.BadRequest);
+            return retorno;
+        }
+    }
+
+    public class GetPedidoResponse400 : IExamplesProvider
+    {
+        public object GetExamples()
+        {
+            List<string> listaCodigos = new List<string> { "M199", "M0001" };
+            var retorno = ExemplosUtil.ListarMensagens(listaCodigos, HttpStatusCode.BadRequest);
+            return retorno;
+        }
+    }
+
+
+    public class PostPedidoResponse400 : IExamplesProvider
+    {
+        public object GetExamples()
+        {
+            List<string> listaCodigos = new List<string> { "M199", "M0001", "M0005" };
+            var retorno = ExemplosUtil.ListarMensagens(listaCodigos, HttpStatusCode.BadRequest);
+            return retorno;
+        }
+    }
+
+    public class DelepedidoResponse400 : IExamplesProvider
+    {
+        public object GetExamples()
+        {
+            List<string> listaCodigos = new List<string> { "M199", "M0001", "M0012" };
+            var retorno = ExemplosUtil.ListarMensagens(listaCodigos, HttpStatusCode.BadRequest);
+            return retorno;
+        }
+    }
+    public class StatusdidoResponse400 : IExamplesProvider
+    {
+        public object GetExamples()
+        {
+            List<string> listaCodigos = new List<string> { "M199", "M0001", "M0012", "M0013" };
+            var retorno = ExemplosUtil.ListarMensagens(listaCodigos, HttpStatusCode.BadRequest);
+            return retorno;
+        }
+    }
+
+    public class PagamentoPedidoResponse400 : IExamplesProvider
+    {
+        public object GetExamples()
+        {
+            List<string> listaCodigos = new List<string> { "M199", "M0001", "M0012", "M0014" };
+            var retorno = ExemplosUtil.ListarMensagens(listaCodigos, HttpStatusCode.BadRequest);
+            return retorno;
+        }
+    }
 }

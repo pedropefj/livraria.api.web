@@ -160,6 +160,33 @@ namespace livraria.api.model.Util {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Pedido inexistente na base de dados..
+        /// </summary>
+        public static string M0012 {
+            get {
+                return ResourceManager.GetString("M0012", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Pagamento do pedido ainda não foi efetuado.
+        /// </summary>
+        public static string M0013 {
+            get {
+                return ResourceManager.GetString("M0013", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Pagamento já realizado..
+        /// </summary>
+        public static string M0014 {
+            get {
+                return ResourceManager.GetString("M0014", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível concluir a operação. Por favor, tente novamente mais tarde..
         /// </summary>
         public static string M199 {

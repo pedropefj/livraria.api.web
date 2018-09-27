@@ -36,7 +36,7 @@ namespace livraria.api.Controllers
         /// <response code="400">"Ocorreu um erro na execução."</response>
         [HttpGet]
         [SwaggerResponseExample(200, typeof(PedidosResponseModelExample), jsonConverter: typeof(StringEnumConverter))]
-        [SwaggerResponseExample(400, typeof(TodosCarrinhosResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(TodosPedidosResponse400), jsonConverter: typeof(StringEnumConverter))]
         [ProducesResponseType(200, Type = typeof(PedidosResponse))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
 
@@ -64,12 +64,12 @@ namespace livraria.api.Controllers
         /// </summary>
         ///<param name="id"></param>  
         /// <response code="200">Lista o pedido</response>
-        ///  <response code="204">Nenhuma pedido encontrado</response>
+        ///  <response code="204">Nenhum pedido encontrado</response>
         /// <response code="400">"Ocorreu um erro na execução."</response>
 
         [HttpGet("{idPedido}")]
         [SwaggerResponseExample(200, typeof(PedidoResponseModelExample), jsonConverter: typeof(StringEnumConverter))]
-        [SwaggerResponseExample(400, typeof(GetCarrinhoResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(GetPedidoResponse400), jsonConverter: typeof(StringEnumConverter))]
         [ProducesResponseType(200, Type = typeof(PedidoResponse))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
 
@@ -98,8 +98,8 @@ namespace livraria.api.Controllers
         ///  <response code="201">Pedido Criado</response>
         /// <response code="400">"Ocorreu um erro na execução."</response>
         [HttpPost]
-        [SwaggerRequestExample(typeof(PedidoRequest), typeof(PedidoResquestModelExample), jsonConverter: typeof(StringEnumConverter))]
-        [SwaggerResponseExample(400, typeof(PostCarrinhoResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerRequestExample(typeof(PedidoResquest), typeof(PedidoResquestModelExample), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(PostPedidoResponse400), jsonConverter: typeof(StringEnumConverter))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
 
         [ProducesResponseType(201, Type = null)]
@@ -130,7 +130,7 @@ namespace livraria.api.Controllers
 
         [ProducesResponseType(200, Type = null)]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
-        [SwaggerResponseExample(400, typeof(LimpaCarrinhoResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(DelepedidoResponse400), jsonConverter: typeof(StringEnumConverter))]
         [HttpDelete]
         [Route("{idPedido}")]
 
@@ -158,12 +158,12 @@ namespace livraria.api.Controllers
         /// </summary>
         ///<param name="id"></param>  
         /// <response code="200">Lista o status do pedido</response>
-        ///  <response code="204">Nenhuma pedido encontrado</response>
+        ///  <response code="204">Nenhum pedido encontrado</response>
         /// <response code="400">"Ocorreu um erro na execução."</response>
 
         [HttpGet]
         [SwaggerResponseExample(200, typeof(PedidoResponseModelExample), jsonConverter: typeof(StringEnumConverter))]
-        [SwaggerResponseExample(400, typeof(GetCarrinhoResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(StatusdidoResponse400), jsonConverter: typeof(StringEnumConverter))]
         [ProducesResponseType(200, Type = typeof(PedidoResponse))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
         [Route("{idPedido}/statusEntrega")]
@@ -191,16 +191,17 @@ namespace livraria.api.Controllers
         /// </summary>
         ///<param name="id"></param>  
         /// <response code="200">Pagamento realizado</response>
-        ///  <response code="204">Nenhuma pedido encontrado</response>
+        ///  <response code="204">Nenhum pedido encontrado</response>
         /// <response code="400">"Ocorreu um erro na execução."</response>
 
         [HttpPut]
-        [SwaggerResponseExample(200, typeof(PedidoResponseModelExample), jsonConverter: typeof(StringEnumConverter))]
-        [SwaggerResponseExample(400, typeof(GetCarrinhoResponse400), jsonConverter: typeof(StringEnumConverter))]
-        [ProducesResponseType(200, Type = typeof(PedidoResponse))]
+        [SwaggerRequestExample(typeof(PagamentoRequest), typeof(PagamentoRequestModelExample), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(200, typeof(PagamentoResponseModelExample), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(PagamentoPedidoResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [ProducesResponseType(200, Type = typeof(PagamentoResponse))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
         [Route("{idPedido}/pagamento")]
-        public HttpResponseMessage GetPagamento(int idPedido)
+        public HttpResponseMessage GetPagamento(int idPedido, [FromBody] PagamentoRequest pedido)
         {
             try
             {

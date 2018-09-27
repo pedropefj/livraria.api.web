@@ -150,6 +150,15 @@
   <data name="M0011" xml:space="preserve">
     <value>Livro não existe no carrinho.</value>
   </data>
+  <data name="M0012" xml:space="preserve">
+    <value>Pedido inexistente na base de dados.</value>
+  </data>
+  <data name="M0013" xml:space="preserve">
+    <value>Pagamento do pedido ainda não foi efetuado</value>
+  </data>
+  <data name="M0014" xml:space="preserve">
+    <value>Pagamento já realizado.</value>
+  </data>
   <data name="M199" xml:space="preserve">
     <value>Não foi possível concluir a operação. Por favor, tente novamente mais tarde.</value>
   </data>
