@@ -1,0 +1,17 @@
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\bin\Debug\netcoreapp2.1\livraria.api.negocio.deps.json
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\bin\Debug\netcoreapp2.1\livraria.api.negocio.runtimeconfig.json
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\bin\Debug\netcoreapp2.1\livraria.api.negocio.runtimeconfig.dev.json
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\bin\Debug\netcoreapp2.1\livraria.api.negocio.dll
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\bin\Debug\netcoreapp2.1\livraria.api.negocio.pdb
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\bin\Debug\netcoreapp2.1\livraria.api.model.dll
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\bin\Debug\netcoreapp2.1\livraria.api.model.pdb
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.csprojAssemblyReference.cache
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.RazorAssemblyInfo.cache
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.RazorAssemblyInfo.cs
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.AssemblyInfoInputs.cache
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.AssemblyInfo.cs
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.RazorTargetAssemblyInfo.cache
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.csproj.CopyComplete
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.dll
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.negocio\obj\Debug\netcoreapp2.1\livraria.api.negocio.pdb

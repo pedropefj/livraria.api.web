@@ -1,0 +1,10 @@
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\bin\Debug\netcoreapp2.1\livraria.api.injetor.deps.json
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\bin\Debug\netcoreapp2.1\livraria.api.injetor.runtimeconfig.json
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\bin\Debug\netcoreapp2.1\livraria.api.injetor.runtimeconfig.dev.json
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\bin\Debug\netcoreapp2.1\livraria.api.injetor.dll
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\obj\Debug\netcoreapp2.1\livraria.api.injetor.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\obj\Debug\netcoreapp2.1\livraria.api.injetor.RazorAssemblyInfo.cache
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\obj\Debug\netcoreapp2.1\livraria.api.injetor.RazorAssemblyInfo.cs
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\obj\Debug\netcoreapp2.1\livraria.api.injetor.AssemblyInfoInputs.cache
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\obj\Debug\netcoreapp2.1\livraria.api.injetor.AssemblyInfo.cs
+C:\Users\Pedro\Source\repos\livraria.api\livraria.api.injetor\obj\Debug\netcoreapp2.1\livraria.api.injetor.RazorTargetAssemblyInfo.cache

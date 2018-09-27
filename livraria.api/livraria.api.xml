@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>livraria.api</name>
+    </assembly>
+    <members>
+        <member name="M:livraria.api.Controllers.AutoresController.Get">
+            <summary>
+            Lista todos os autores.
+            </summary>
+            <response code="200">Lista de Autores</response>
+             <response code="204">Nenhuma Autor encontrado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.AutoresController.Get(System.Int32)">
+             <summary>
+             Lista um autor.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Lista o Autor</response>
+              <response code="204">Nenhuma Autor encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.AutoresController.Post(livraria.api.mode.Model.Request.AutorRequest)">
+            <summary>
+            Cria um autor.
+            </summary>
+             <response code="201">Autor Criado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.AutoresController.Delete(System.Int32)">
+             <summary>
+             Deleta um autor
+             </summary>
+            <param name="id">Código identificador do autor</param>   
+              <response code="200">Autor deletado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.AutoresController.Update(System.Int32,livraria.api.mode.Model.Request.AutorRequest)">
+             <summary>
+             Atualiza um autor
+             </summary>
+            <param name="id">Código identificador do autor</param>   
+              <response code="200">Autor atualizado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.BaseController.ResponseBasic(System.Net.HttpStatusCode,System.String)">
+            <summary>
+            Método para construir uma resposta padrão.
+            </summary>
+            <param name="statusCode"></param>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:livraria.api.Controllers.BaseController.ResponseBasicJson(System.Net.HttpStatusCode,System.Object)">
+            <summary>
+            Método para construir uma resposta padrão com um JSON.
+            </summary>
+            <param name="statusCode"></param>
+            <param name="content"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:livraria.api.Controllers.EditorasController.Get">
+            <summary>
+            Lista todos os autores.
+            </summary>
+            <response code="200">Lista de Autores</response>
+             <response code="204">Nenhuma Autor encontrado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.EditorasController.Get(System.Int32)">
+             <summary>
+             Lista um autor.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Lista o Autor</response>
+              <response code="204">Nenhuma Autor encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.EditorasController.Post(livraria.api.mode.Model.Request.AutorRequest)">
+            <summary>
+            Cria uma editora.
+            </summary>
+             <response code="201">Editora Criada</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.EditorasController.Delete(System.Int32)">
+             <summary>
+             Deleta um autor
+             </summary>
+            <param name="id">Código identificador do editora</param>   
+              <response code="200">Editora deletada</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.EditorasController.Update(System.Int32,livraria.api.mode.Model.Request.AutorRequest)">
+             <summary>
+             Atualiza a editora
+             </summary>
+            <param name="id">Código identificador da editora</param>   
+              <response code="200">Editora atualizado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.JsonNameToPropertyNameContractResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)">
+            <summary>
+            Método para gerar os nomes de propriedades.
+            </summary>
+            <param name="type"></param>
+            <param name="memberSerialization"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
