@@ -236,7 +236,7 @@
              </summary>
             <param name="id"></param>  
              <response code="200">Lista o pedido</response>
-              <response code="204">Nenhuma pedido encontrado</response>
+              <response code="204">Nenhum pedido encontrado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
         <member name="M:livraria.api.Controllers.PedidosController.Post(livraria.api.mode.Model.Request.PedidoResquest)">
@@ -259,7 +259,7 @@
              </summary>
             <param name="id"></param>  
              <response code="200">Lista o status do pedido</response>
-              <response code="204">Nenhuma pedido encontrado</response>
+              <response code="204">Nenhum pedido encontrado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
         <member name="M:livraria.api.Controllers.PedidosController.GetPagamento(System.Int32,livraria.api.mode.Model.Request.PagamentoRequest)">
@@ -268,7 +268,7 @@
              </summary>
             <param name="id"></param>  
              <response code="200">Pagamento realizado</response>
-              <response code="204">Nenhuma pedido encontrado</response>
+              <response code="204">Nenhum pedido encontrado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
         <member name="M:livraria.api.JsonNameToPropertyNameContractResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)">

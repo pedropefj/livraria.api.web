@@ -46,7 +46,7 @@ namespace livraria.api
                 c.SwaggerDoc("v1",
                     new Info
                     {
-                        Title = "Livria API",
+                        Title = "Livraria API",
                         Version = "v1",
                         Description = "Exemplo de API REST criada com o ASP.NET Core",
                         Contact = new Contact
