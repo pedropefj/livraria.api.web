@@ -88,6 +88,60 @@ namespace livraria.api.model.Util {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Livro já existente..
+        /// </summary>
+        public static string M0004 {
+            get {
+                return ResourceManager.GetString("M0004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Livro inexistente na base de dados..
+        /// </summary>
+        public static string M0005 {
+            get {
+                return ResourceManager.GetString("M0005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Editora já existente..
+        /// </summary>
+        public static string M0006 {
+            get {
+                return ResourceManager.GetString("M0006", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Editora inexistente na base de dados..
+        /// </summary>
+        public static string M0007 {
+            get {
+                return ResourceManager.GetString("M0007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Comentario já existente..
+        /// </summary>
+        public static string M0008 {
+            get {
+                return ResourceManager.GetString("M0008", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Comentario inexistente na base de dados..
+        /// </summary>
+        public static string M0009 {
+            get {
+                return ResourceManager.GetString("M0009", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível concluir a operação. Por favor, tente novamente mais tarde..
         /// </summary>
         public static string M199 {

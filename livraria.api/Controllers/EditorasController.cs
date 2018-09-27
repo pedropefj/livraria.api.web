@@ -27,14 +27,14 @@ namespace livraria.api.Controllers
             _livrariaBLL = livrariaBLL;
         }
         /// <summary>
-        /// Lista todos os autores.
+        /// Lista todos as editoras.
         /// </summary>
         /// <response code="200">Lista de Autores</response>
         ///  <response code="204">Nenhuma Autor encontrado</response>
         /// <response code="400">"Ocorreu um erro na execução."</response>
         [HttpGet]
-        [SwaggerResponseExample(200, typeof(AutoresResponseModelExample), jsonConverter: typeof(StringEnumConverter))]
-        [SwaggerResponseExample(400, typeof(TodosAutoresResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(200, typeof(EditorasResponseModelExample), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(TodasEditorasResponse400), jsonConverter: typeof(StringEnumConverter))]
         [ProducesResponseType(200, Type = typeof(AutoresResponse))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
 
@@ -58,16 +58,16 @@ namespace livraria.api.Controllers
         }
 
         /// <summary>
-        /// Lista um autor.
+        /// Lista uma editora.
         /// </summary>
         ///<param name="id"></param>  
-        /// <response code="200">Lista o Autor</response>
+        /// <response code="200">Lista uma editora</response>
         ///  <response code="204">Nenhuma Autor encontrado</response>
         /// <response code="400">"Ocorreu um erro na execução."</response>
 
         [HttpGet("{id}")]
         [SwaggerResponseExample(200, typeof(AutorResponseModelExample), jsonConverter: typeof(StringEnumConverter))]
-        [SwaggerResponseExample(400, typeof(GetAutorResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(GetEditoraResponse400), jsonConverter: typeof(StringEnumConverter))]
         [ProducesResponseType(200, Type = typeof(AutorResponse))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
 
@@ -96,11 +96,11 @@ namespace livraria.api.Controllers
         ///  <response code="201">Editora Criada</response>
         /// <response code="400">"Ocorreu um erro na execução."</response>
         [HttpPost]
-        [SwaggerRequestExample(typeof(AutorRequest), typeof(AutorRequestModelExample), jsonConverter: typeof(StringEnumConverter))]
-        [SwaggerResponseExample(400, typeof(PostAutorResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerRequestExample(typeof(EditoraRequest), typeof(EditoraRequestModelExample), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(PostEditoraResponse400), jsonConverter: typeof(StringEnumConverter))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
 
-        [ProducesResponseType(201)]
+        [ProducesResponseType(201, Type= null)]
 
         public HttpResponseMessage Post([FromBody]AutorRequest autor)
         {
@@ -121,7 +121,7 @@ namespace livraria.api.Controllers
             }
         }
         /// <summary>
-        /// Deleta um autor
+        /// Deleta uma editora
         /// </summary>
         ///<param name="id">Código identificador do editora</param>   
         ///  <response code="200">Editora deletada</response>
@@ -130,7 +130,7 @@ namespace livraria.api.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(200, Type = null)]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
-        [SwaggerResponseExample(400, typeof(DeleteAutorResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(DeleteEditoraResponse400), jsonConverter: typeof(StringEnumConverter))]
 
         public HttpResponseMessage Delete(int id)
         {
@@ -160,7 +160,7 @@ namespace livraria.api.Controllers
         [HttpPut("{id}")]
 
         [SwaggerResponseExample(200, typeof(AutorResponseModelExample), jsonConverter: typeof(StringEnumConverter))]
-        [SwaggerResponseExample(400, typeof(UpdateAutorResponse400), jsonConverter: typeof(StringEnumConverter))]
+        [SwaggerResponseExample(400, typeof(UpdateEditoraResponse400), jsonConverter: typeof(StringEnumConverter))]
         [ProducesResponseType(200, Type = typeof(AutorResponse))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
 

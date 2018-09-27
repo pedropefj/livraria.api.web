@@ -101,6 +101,88 @@
               <response code="200">Editora atualizado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
+        <member name="M:livraria.api.Controllers.LivrosController.Get">
+            <summary>
+            Lista todos os Livros.
+            </summary>
+            <response code="200">Lista de Livros</response>
+             <response code="204">Nenhuma Livro encontrado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.LivrosController.Get(System.Int32)">
+             <summary>
+             Lista um Livro.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Lista o Livro</response>
+              <response code="204">Nenhuma Livro encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.LivrosController.Post(livraria.api.mode.Model.Request.AutorRequest)">
+            <summary>
+            Cria um Livro.
+            </summary>
+             <response code="201">Livro Criado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.LivrosController.Delete(System.Int32)">
+             <summary>
+             Deleta um livro
+             </summary>
+            <param name="id">Código identificador do livro</param>   
+              <response code="200">Livro deletado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.LivrosController.Update(System.Int32,livraria.api.mode.Model.Request.AutorRequest)">
+             <summary>
+             Atualiza um livro
+             </summary>
+            <param name="id">Código identificador do livro</param>   
+              <response code="200">Autor atualizado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.LivrosController.GetComentarios">
+            <summary>
+            Lista todos comentarios
+            </summary>
+            <response code="200">Lista de Livros</response>
+             <response code="204">Nenhuma Livro encontrado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.LivrosController.GetLivroComentarios(System.Int32)">
+             <summary>
+             Lista comentarios de um livro.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Lista os comentarios</response>
+              <response code="204">Nenhuma comentario encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.LivrosController.GetLivroComentario(System.Int32,System.Int32)">
+             <summary>
+             Lista um comentario especifico de um livro.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Lista os comentarios</response>
+              <response code="204">Nenhuma comentario encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.LivrosController.PostComentario(livraria.api.mode.Model.Request.ComentarioRequest,System.Int32)">
+            <summary>
+            Cria um comentario.
+            </summary>
+             <response code="201">Comentario Criado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.LivrosController.GetBuscaLivro(System.String,System.String)">
+             <summary>
+             Lista um Livro.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Lista o Livro</response>
+              <response code="204">Nenhuma Livro encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
         <member name="M:livraria.api.JsonNameToPropertyNameContractResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)">
             <summary>
             Método para gerar os nomes de propriedades.

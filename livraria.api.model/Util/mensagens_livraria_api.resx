@@ -126,6 +126,24 @@
   <data name="M0003" xml:space="preserve">
     <value>Autor inexistente na base de dados.</value>
   </data>
+  <data name="M0004" xml:space="preserve">
+    <value>Livro já existente.</value>
+  </data>
+  <data name="M0005" xml:space="preserve">
+    <value>Livro inexistente na base de dados.</value>
+  </data>
+  <data name="M0006" xml:space="preserve">
+    <value>Editora já existente.</value>
+  </data>
+  <data name="M0007" xml:space="preserve">
+    <value>Editora inexistente na base de dados.</value>
+  </data>
+  <data name="M0008" xml:space="preserve">
+    <value>Comentario já existente.</value>
+  </data>
+  <data name="M0009" xml:space="preserve">
+    <value>Comentario inexistente na base de dados.</value>
+  </data>
   <data name="M199" xml:space="preserve">
     <value>Não foi possível concluir a operação. Por favor, tente novamente mais tarde.</value>
   </data>

@@ -101,7 +101,7 @@ namespace livraria.api.Controllers
         [SwaggerResponseExample(400, typeof(PostAutorResponse400), jsonConverter: typeof(StringEnumConverter))]
         [ProducesResponseType(400, Type = typeof(MensagemError))]
 
-        [ProducesResponseType(201)]
+        [ProducesResponseType(201, Type= null)]
 
         public HttpResponseMessage Post([FromBody]AutorRequest autor)
         {
