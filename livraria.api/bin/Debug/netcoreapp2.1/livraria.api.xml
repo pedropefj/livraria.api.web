@@ -222,6 +222,55 @@
               <response code="204">Nenhum Livro encontrado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
+        <member name="M:livraria.api.Controllers.PedidosController.Get">
+            <summary>
+            Lista todos os pedidos.
+            </summary>
+            <response code="200">Lista todos os pedidos</response>
+             <response code="204">Nenhum pedido encontrado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.PedidosController.Get(System.Int32)">
+             <summary>
+             Lista um pedido.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Lista o pedido</response>
+              <response code="204">Nenhuma pedido encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.PedidosController.Post(livraria.api.mode.Model.Request.PedidoResquest)">
+            <summary>
+            Realizar pedido.
+            </summary>
+             <response code="201">Pedido Criado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.PedidosController.Delete(System.Int32)">
+            <summary>
+            Deletar pedido
+            </summary>
+             <response code="200">Pedido deletado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.PedidosController.GetStatusPedido(System.Int32)">
+             <summary>
+             Status de entrega de um pedido.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Lista o status do pedido</response>
+              <response code="204">Nenhuma pedido encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.PedidosController.GetPagamento(System.Int32)">
+             <summary>
+             Realizar pagamento.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Pagamento realizado</response>
+              <response code="204">Nenhuma pedido encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
         <member name="M:livraria.api.JsonNameToPropertyNameContractResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)">
             <summary>
             Método para gerar os nomes de propriedades.
