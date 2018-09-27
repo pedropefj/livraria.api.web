@@ -144,6 +144,12 @@
   <data name="M0009" xml:space="preserve">
     <value>Comentario inexistente na base de dados.</value>
   </data>
+  <data name="M0010" xml:space="preserve">
+    <value>Carrinho inexistente na base de dados.</value>
+  </data>
+  <data name="M0011" xml:space="preserve">
+    <value>Livro não existe no carrinho.</value>
+  </data>
   <data name="M199" xml:space="preserve">
     <value>Não foi possível concluir a operação. Por favor, tente novamente mais tarde.</value>
   </data>

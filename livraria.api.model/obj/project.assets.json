@@ -11588,11 +11588,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro\\Source\\repos\\livraria.api\\livraria.api.model\\livraria.api.model.csproj",
+      "projectUniqueName": "C:\\Users\\Pedro\\Desktop\\livraria.api.web-master\\livraria.api.model\\livraria.api.model.csproj",
       "projectName": "livraria.api.model",
-      "projectPath": "C:\\Users\\Pedro\\Source\\repos\\livraria.api\\livraria.api.model\\livraria.api.model.csproj",
+      "projectPath": "C:\\Users\\Pedro\\Desktop\\livraria.api.web-master\\livraria.api.model\\livraria.api.model.csproj",
       "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro\\Source\\repos\\livraria.api\\livraria.api.model\\obj\\",
+      "outputPath": "C:\\Users\\Pedro\\Desktop\\livraria.api.web-master\\livraria.api.model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

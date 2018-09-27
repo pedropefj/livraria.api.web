@@ -11607,11 +11607,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro\\Source\\repos\\livraria.api\\livraria.api.negocio\\livraria.api.negocio.csproj",
+      "projectUniqueName": "C:\\Users\\Pedro\\Desktop\\livraria.api.web-master\\livraria.api.negocio\\livraria.api.negocio.csproj",
       "projectName": "livraria.api.negocio",
-      "projectPath": "C:\\Users\\Pedro\\Source\\repos\\livraria.api\\livraria.api.negocio\\livraria.api.negocio.csproj",
+      "projectPath": "C:\\Users\\Pedro\\Desktop\\livraria.api.web-master\\livraria.api.negocio\\livraria.api.negocio.csproj",
       "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro\\Source\\repos\\livraria.api\\livraria.api.negocio\\obj\\",
+      "outputPath": "C:\\Users\\Pedro\\Desktop\\livraria.api.web-master\\livraria.api.negocio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11630,8 +11630,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Pedro\\Source\\repos\\livraria.api\\livraria.api.model\\livraria.api.model.csproj": {
-              "projectPath": "C:\\Users\\Pedro\\Source\\repos\\livraria.api\\livraria.api.model\\livraria.api.model.csproj"
+            "C:\\Users\\Pedro\\Desktop\\livraria.api.web-master\\livraria.api.model\\livraria.api.model.csproj": {
+              "projectPath": "C:\\Users\\Pedro\\Desktop\\livraria.api.web-master\\livraria.api.model\\livraria.api.model.csproj"
             }
           }
         }

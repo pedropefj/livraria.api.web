@@ -61,9 +61,48 @@
             <returns></returns>
             
         </member>
+        <member name="M:livraria.api.Controllers.CarrinhosController.Get">
+            <summary>
+            Lista todos os carrinhos.
+            </summary>
+            <response code="200">Lista todos os carrinhos</response>
+             <response code="204">Nenhuma carrinho encontrado</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.CarrinhosController.Get(System.Int32)">
+             <summary>
+             Lista um carrinho.
+             </summary>
+            <param name="id"></param>  
+             <response code="200">Lista o Carrinho</response>
+              <response code="204">Nenhuma Carrinho encontrado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.CarrinhosController.Post(livraria.api.mode.Model.Request.CarrinhoRequest)">
+            <summary>
+            Adiciona item ao carrinho.
+            </summary>
+             <response code="201">Item adcionado ao carrionho</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.CarrinhosController.Delete">
+            <summary>
+            Limpa o carrinho
+            </summary>
+             <response code="200">Carrinho limpo</response>
+            <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
+        <member name="M:livraria.api.Controllers.CarrinhosController.Delete(System.Int32)">
+             <summary>
+             Remove item do carrinho
+             </summary>
+            <param name="id">Código identificador item no carrinho</param>   
+              <response code="200">Carrinho atualizado</response>
+             <response code="400">"Ocorreu um erro na execução."</response>
+        </member>
         <member name="M:livraria.api.Controllers.EditorasController.Get">
             <summary>
-            Lista todos os autores.
+            Lista todos as editoras.
             </summary>
             <response code="200">Lista de Autores</response>
              <response code="204">Nenhuma Autor encontrado</response>
@@ -71,10 +110,10 @@
         </member>
         <member name="M:livraria.api.Controllers.EditorasController.Get(System.Int32)">
              <summary>
-             Lista um autor.
+             Lista uma editora.
              </summary>
             <param name="id"></param>  
-             <response code="200">Lista o Autor</response>
+             <response code="200">Lista uma editora</response>
               <response code="204">Nenhuma Autor encontrado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
@@ -87,7 +126,7 @@
         </member>
         <member name="M:livraria.api.Controllers.EditorasController.Delete(System.Int32)">
              <summary>
-             Deleta um autor
+             Deleta uma editora
              </summary>
             <param name="id">Código identificador do editora</param>   
               <response code="200">Editora deletada</response>
@@ -138,7 +177,7 @@
              Atualiza um livro
              </summary>
             <param name="id">Código identificador do livro</param>   
-              <response code="200">Autor atualizado</response>
+              <response code="200">Livro atualizado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
         <member name="M:livraria.api.Controllers.LivrosController.GetComentarios">
@@ -146,7 +185,7 @@
             Lista todos comentarios
             </summary>
             <response code="200">Lista de Livros</response>
-             <response code="204">Nenhuma Livro encontrado</response>
+             <response code="204">Nenhum Livro encontrado</response>
             <response code="400">"Ocorreu um erro na execução."</response>
         </member>
         <member name="M:livraria.api.Controllers.LivrosController.GetLivroComentarios(System.Int32)">
@@ -155,7 +194,7 @@
              </summary>
             <param name="id"></param>  
              <response code="200">Lista os comentarios</response>
-              <response code="204">Nenhuma comentario encontrado</response>
+              <response code="204">Nenhum comentario encontrado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
         <member name="M:livraria.api.Controllers.LivrosController.GetLivroComentario(System.Int32,System.Int32)">
@@ -164,7 +203,7 @@
              </summary>
             <param name="id"></param>  
              <response code="200">Lista os comentarios</response>
-              <response code="204">Nenhuma comentario encontrado</response>
+              <response code="204">Nenhum comentario encontrado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
         <member name="M:livraria.api.Controllers.LivrosController.PostComentario(livraria.api.mode.Model.Request.ComentarioRequest,System.Int32)">
@@ -176,11 +215,11 @@
         </member>
         <member name="M:livraria.api.Controllers.LivrosController.GetBuscaLivro(System.String,System.String)">
              <summary>
-             Lista um Livro.
+             Filtro de Livro.
              </summary>
             <param name="id"></param>  
-             <response code="200">Lista o Livro</response>
-              <response code="204">Nenhuma Livro encontrado</response>
+             <response code="200">Lista os Livro</response>
+              <response code="204">Nenhum Livro encontrado</response>
              <response code="400">"Ocorreu um erro na execução."</response>
         </member>
         <member name="M:livraria.api.JsonNameToPropertyNameContractResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)">

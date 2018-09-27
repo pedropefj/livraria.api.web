@@ -142,6 +142,24 @@ namespace livraria.api.model.Util {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Carrinho inexistente na base de dados..
+        /// </summary>
+        public static string M0010 {
+            get {
+                return ResourceManager.GetString("M0010", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Livro não existe no carrinho..
+        /// </summary>
+        public static string M0011 {
+            get {
+                return ResourceManager.GetString("M0011", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível concluir a operação. Por favor, tente novamente mais tarde..
         /// </summary>
         public static string M199 {
